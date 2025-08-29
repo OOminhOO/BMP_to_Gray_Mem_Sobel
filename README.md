@@ -48,14 +48,15 @@
 
 ## 3. 소프트웨어 설계 표준 (SDS)
    3.1 아키텍처 설계
-   BMP\_Processor
-   ├─ File\_IO
-   │  ├─ Input\_Validator
-   │  └─ Output\_Writer (GrayscaleBMP / EdgeBMP / MemWriter)
-   ├─ Image\_Core
-   │  ├─ Color\_Converter (rgbToGrayscale)
-   │  └─ Edge\_Detector (getPixel, findEdges)
-   └─ Error\_and\_Logging
+   
+BMP_Processor
+├─ File_IO
+│ ├─ Input_Validator
+│ └─ Output_Writer (GrayscaleBMP / EdgeBMP / MemWriter)
+├─ Image_Core
+│ ├─ Color_Converter (rgbToGrayscale)
+│ └─ Edge_Detector (getPixel, findEdges)
+└─ Error_and_Logging
 
 3.2 상세 설계
 
