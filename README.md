@@ -50,13 +50,16 @@
    3.1 아키텍처 설계
    
 BMP_Processor
-├─ File_IO
-│ ├─ Input_Validator
-│ └─ Output_Writer (GrayscaleBMP / EdgeBMP / MemWriter)
-├─ Image_Core
-│ ├─ Color_Converter (rgbToGrayscale)
-│ └─ Edge_Detector (getPixel, findEdges)
-└─ Error_and_Logging
+├─── File_IO
+│  ├─── Input_Validator
+│  └─── Output_Writer
+│     ├─── GrayscaleBMP
+│     ├─── EdgeBMP
+│     └─── MemWriter
+├─── Image_Core
+│  ├─── Color_Converter (rgbToGrayscale)
+│  └─── Edge_Detector (getPixel, findEdges)
+└─── Error_and_Logging
 
 3.2 상세 설계
 
